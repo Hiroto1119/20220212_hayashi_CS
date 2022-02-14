@@ -6,7 +6,7 @@ body {
   padding: 0;
   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ,
     Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #e6e6e6;
+  /* background-color: #e6e6e6; */
 }
 
 /* header */
@@ -21,28 +21,28 @@ header {
   z-index: 1;
 }
 
-h1 {
+header h1 {
   margin: 0;
   padding: 0;
   font-size: 24px;
 }
 
-a {
+header a {
   text-decoration: none;
   color: #000000;
 }
 
-nav {
+header nav {
   margin: 0 0 0 auto;
 }
 
-ul {
+header ul {
   list-style: none;
   margin: 0;
   display: flex;
 }
 
-li {
+header li {
   margin: 0 0 0 15px;
   font-size: 16px;
   font-weight: bold;
@@ -76,7 +76,7 @@ li {
 /* メッセージ */
 .message {
   background: rgb(36, 35, 35);
-  height: 300px;
+  /* height: 300px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,6 +87,7 @@ li {
 }
 
 .message__contents-ttl {
+  font-size: 30px;
   color: white;
   margin-bottom: 24px;
 }
@@ -95,3 +96,108 @@ li {
   color: white;
   line-height: 1.5;
 }
+
+/* サービス */
+.service {
+  /* background: gray; */
+}
+
+.service__ttl {
+  text-align: center;
+  padding: 80px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.service__contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 10%;
+}
+
+.service__contents-card {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 50%;
+  /* background-color: #f0f0f0; */
+}
+
+.service__contents-card img {
+  margin-bottom: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+.service__contents-ttl {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service__contents-desc {
+  line-height: 1.5;
+}
+
+.service__btn {
+  text-align: center;
+}
+
+.service__btn a {
+  display: inline-block;
+  padding: 20px 40px;
+  color: #fff;
+  background: red;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-decoration: none;
+}
+
+.service__btn a:hover {
+  opacity: 80%;
+  transition: 0.5s;
+}
+
+/* ニュース */
+.news {
+  background: rgb(36, 35, 35);
+  padding: 80px;
+}
+
+.news__contents {
+  margin: 0 10%;
+}
+
+.news__contetns-header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  /* padding-top: 80px; */
+  align-items: center;
+}
+
+.news__contents-ttl {
+  font-size: 30px;
+}
+
+.news__contents-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background: red;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-decoration: none;
+}
+
+.news li {
+  display: flex;
+  background: white;
+  padding: 24px;
+  margin-bottom: 8px;
+}
+
+/* .news ul {
+  margin-bottom: 80px;
+} */
