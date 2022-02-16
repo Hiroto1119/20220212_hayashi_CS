@@ -266,9 +266,16 @@ header li:hover {
 
 .news li {
   display: flex;
-  background: white;
   padding: 24px;
   margin-bottom: 8px;
+  /* list-style: none; */
+}
+
+.news li a {
+  display: flex;
+  width: 100%;
+  padding: 10px 15px;
+  background: white;
 }
 
 /* 社員ブログ */
