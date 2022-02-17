@@ -126,42 +126,81 @@ header li:hover {
   font-size: 30px;
 }
 
-/* お問い合わせ */
-/* .contact {
+/* 採用活動 */
+.recruit__contents {
   margin: 50px 10%;
-} */
-
-.contact form {
-  margin: 50px 10%;
-  /* width: 100%; */
 }
 
-.contact p {
-  font-weight: bold;
+.recruit__contents-ttl {
+  font-size: 30px;
+  padding-bottom: 15px;
+  border-bottom: black solid 1px;
 }
 
-.contact input {
-  width: 100%;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  height: 30px;
-}
-
-.contact textarea {
-  width: 100%;
-  margin-top: 5px;
+.recruit__contents-desc {
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
-.contact .btn {
-  display: block;
-  width: 100px;
-  background-color: black;
-  color: white;
-  padding: 12px 12px;
-  /* font-size: 18px; */
-  margin: 0 auto;
-  /* text-align: center; */
+table {
+  /* border-collapse: collapse; */
+  width: 100%;
+  height: 200px;
+}
+
+th,
+td {
+  border: solid 1px #333; /* 線の種類 太さ 色 */
+  vertical-align: middle;
+}
+
+th {
+  background: rgb(243, 243, 243);
+  width: 30%;
+}
+
+td {
+  padding-left: 24px;
+}
+
+.recruit__contents-block2 {
+  margin-top: 50px;
+}
+
+/* お問い合わせ */
+.contact {
+  background: rgb(248, 248, 248);
+  padding: 80px 0;
+}
+
+.contact__ttl {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact__contents-desc {
+  text-align: center;
+}
+
+.contact__contents-btn {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contact__contents-btn a {
+  display: inline-block;
+  padding: 16px 40px;
+  color: #fff;
+  background: rgb(160, 0, 0);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact__contents-btn a:hover {
+  opacity: 40%;
+  transition: 1s;
 }
 
 /* footer */
