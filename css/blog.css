@@ -126,46 +126,121 @@ header li:hover {
   font-size: 30px;
 }
 
-/* お問い合わせ */
-/* .contact {
-  margin: 50px 10%;
-} */
-
-.contact form {
-  margin: 50px 10%;
-  /* width: 100%; */
+/* 社員ブログ */
+.blog {
+  padding: 80px 0;
 }
 
-.contact p {
+.blog__ttl {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.blog__contents {
+  margin: 0 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.blog__contents-card {
+  width: 32%;
+  margin-bottom: 30px;
+}
+
+.blog__contents-card a {
+  text-decoration: none;
+}
+
+.blog__contents-card a:hover {
+  opacity: 40%;
+  transition: 1s;
+}
+
+.blog__contents-card img {
+  width: 100%;
+}
+
+.blog__contents-date {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #000;
+}
+
+.blog__contents-ttl {
+  font-size: 16px;
   font-weight: bold;
+  margin-top: 8px;
+  color: #000;
 }
 
-.contact input {
-  width: 100%;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  height: 30px;
-  border: rgb(179, 179, 179) solid 1px;
+.blog__btn {
+  text-align: center;
+  margin-top: 30px;
 }
 
-.contact textarea {
-  width: 100%;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: rgb(179, 179, 179) solid 1px;
+.blog__btn a {
+  display: inline-block;
+  padding: 16px 40px;
+  color: #fff;
+  background: rgb(160, 0, 0);
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.contact .btn {
-  display: block;
-  width: 300px;
-  height: auto;
-  background-color: black;
-  color: white;
-  padding: 15px;
-  /* font-size: 18px; */
-  margin: 0 auto;
-  /* text-align: center; */
-  border: none;
+.blog__btn a:hover {
+  opacity: 40%;
+  transition: 1s;
+}
+
+@media screen and (max-width: 1000px) {
+  .blog__contents {
+    display: flex;
+    justify-content: center;
+    margin: 0 10%;
+  }
+
+  .blog__contents-card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/* お問い合わせ */
+.contact {
+  background: rgb(248, 248, 248);
+  padding: 80px 0;
+}
+
+.contact__ttl {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact__contents-desc {
+  text-align: center;
+}
+
+.contact__contents-btn {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contact__contents-btn a {
+  display: inline-block;
+  padding: 16px 40px;
+  color: #fff;
+  background: rgb(160, 0, 0);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact__contents-btn a:hover {
+  opacity: 40%;
+  transition: 1s;
 }
 
 /* footer */
