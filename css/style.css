@@ -34,28 +34,32 @@ header a {
   color: #000000;
 }
 
-header nav {
+header .pc-nav {
   margin: 0 0 0 auto;
 }
 
-header ul {
+header .pc-nav ul {
   list-style: none;
   margin: 0;
   display: flex;
 }
 
-header li {
+header .pc-nav li {
   margin: 0 0 0 15px;
   font-size: 16px;
   font-weight: bold;
 }
 
-header li:hover {
+header .pc-nav li:hover {
   opacity: 40%;
   transition: 1s;
 }
 
 .menu {
+  display: none;
+}
+
+.sp-nav {
   display: none;
 }
 
@@ -103,6 +107,43 @@ header li:hover {
   .menu.open span:nth-of-type(3) {
     top: 14px;
     transform: rotate(-45deg);
+  }
+
+  .sp-nav {
+    display: block;
+    position: absolute;
+    top: 0;
+    /*ナビメニューを左に隠した状態になる*/
+    left: -30%;
+    width: 40%;
+    height: 100vh;
+    background: #ffffff;
+    /*０.7秒かけてナビメニューがスライドする*/
+    transition: 0.7s;
+  }
+  .sp-nav ul {
+    padding-top: 80px;
+  }
+  .sp-nav ul li {
+    list-style-type: none;
+    font-size: 20px;
+  }
+  .sp-nav a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    margin: 0 15px;
+    padding: 10px;
+    transition: 0.5s;
+  }
+  .sp-nav li a:hover {
+    color: #ffffff;
+    background: #cd5c5c;
+    border-bottom: none;
+  }
+
+  .sp-nav .in {
+    transform: translateX(100%);
   }
 }
 
@@ -417,6 +458,10 @@ header li:hover {
 .contact {
   background: rgb(248, 248, 248);
   padding: 80px 0;
+}
+
+.contact__contents {
+  margin: 0 10%;
 }
 
 .contact__ttl {
