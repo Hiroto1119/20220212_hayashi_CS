@@ -1,5 +1,5 @@
 const target = document.getElementById("menu");
-const drawer = document.getElementsByClassName("sp-nav");
+const drawer = document.getElementById("sp-nav");
 target.addEventListener('click', () => {
   target.classList.toggle('open');
   drawer.classList.toggle('in');
