@@ -545,3 +545,22 @@ footer li:hover {
 footer li:last-child {
   border-right: none;
 }
+
+/* footer small */
+@media screen and (max-width: 700px) {
+  .footer-menu {
+    display: inline;
+    /* justify-content: space-between;
+    margin: 0 10%;
+    color: #fff; */
+    text-align: center;
+  }
+
+  footer ul {
+    display: inline;
+  }
+
+  footer li {
+    margin: 10px 0;
+  }
+}
