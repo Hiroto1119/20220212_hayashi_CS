@@ -16,7 +16,7 @@
         <li class="header-li"><a class="header-a" href="contact.html">お問い合わせ</a></li>
       </ul>
     </nav>
-    <nav class="sp-nav" id="sp-nav">
+    <nav class="drawer-nav" id="drawer-nav">
       <ul>
         <li class="sp-nav-li"><a class="sp-nav-a" href="index.html">ホーム</a></li>
         <li class="sp-nav-li"><a class="sp-nav-a" href="service.html">事業内容</a></li>

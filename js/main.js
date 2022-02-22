@@ -1,9 +1,9 @@
-const target = document.getElementById("menu");
-const drawer = document.getElementById("sp-nav");
-target.addEventListener('click', () => {
-  target.classList.toggle('open');
-  drawer.classList.toggle('in');
-});
+// const target = document.getElementById("menu");
+// const drawer = document.getElementById("sp-nav");
+// target.addEventListener('click', () => {
+//   target.classList.toggle('open');
+//   drawer.classList.toggle('in');
+// });
 
 // function hamburger() {
 //   document.getElementById('line1').classList.toggle('line_1');
@@ -14,3 +14,12 @@ target.addEventListener('click', () => {
 // document.getElementById('hamburger').addEventListener('click' , function () {
 //   hamburger();
 // } );
+
+const target = document.getElementById("menu");
+
+target.addEventListener('click', () => {
+  const target = document.getElementById("menu");
+  target.classList.toggle('open');
+  const nav = document.getElementById("drawer-nav");
+  nav.classList.toggle('in');
+});

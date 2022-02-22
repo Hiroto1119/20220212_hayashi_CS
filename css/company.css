@@ -34,28 +34,32 @@ header a {
   color: #000000;
 }
 
-header nav {
+header .pc-nav {
   margin: 0 0 0 auto;
 }
 
-header ul {
+header .pc-nav ul {
   list-style: none;
   margin: 0;
   display: flex;
 }
 
-header li {
+header .pc-nav li {
   margin: 0 0 0 15px;
   font-size: 16px;
   font-weight: bold;
 }
 
-header li:hover {
+header .pc-nav li:hover {
   opacity: 40%;
   transition: 1s;
 }
 
 .menu {
+  display: none;
+}
+
+.drawer-nav {
   display: none;
 }
 
@@ -103,6 +107,46 @@ header li:hover {
   .menu.open span:nth-of-type(3) {
     top: 14px;
     transform: rotate(-45deg);
+  }
+
+  .drawer-nav {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    /* transform: translateX(100%) */
+    transition: 1s;
+    opacity: 95%;
+  }
+
+  .drawer-nav ul {
+    padding-top: 80px;
+  }
+  .drawer-nav ul li {
+    list-style-type: none;
+    font-size: 16px;
+    text-align: center;
+    margin: 30px;
+  }
+  .drawer-nav a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    margin: 0 15px;
+    padding: 10px;
+    transition: 0.5s;
+  }
+  .drawer-nav li a:hover {
+    color: #ffffff;
+    background: #cd5c5c;
+    border-bottom: none;
+  }
+
+  .in {
+    left: 0%;
   }
 }
 
